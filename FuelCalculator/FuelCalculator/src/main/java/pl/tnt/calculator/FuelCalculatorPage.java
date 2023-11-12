@@ -35,8 +35,7 @@ public class FuelCalculatorPage {
 
     @FindBy(name = "gaspriceunit")
     private WebElement gasPriceUnitSelect;
-
-
+    
     private final WebDriver driver;
 
     public FuelCalculatorPage(WebDriver driver) {
