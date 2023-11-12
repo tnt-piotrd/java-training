@@ -41,17 +41,17 @@ public class FuelCalculatorPage {
 
     public String calculateFuelAndCost(String distance, boolean isDistanceInKilometers, String fuelEfficiency, String gasPrice, boolean isPricePerLiter){
         tripDistanceInput.sendKeys(distance);
-        selectValue(tripDistanceUnitSelect, isDistanceInKilometers?1:0);
+        selectValue(tripDistanceUnitSelect, isDistanceInKilometers);
         fuelEfficiencyInput.sendKeys(fuelEfficiency);
         gasPriceInput.sendKeys(gasPrice);
-        selectValue(gasPriceUnitSelect, isPricePerLiter?1:0);
+        selectValue(gasPriceUnitSelect, isPricePerLiter);
         calculateBtn.click();
         return tripResultText.getText();
     }
-
-    private void selectValue(WebElement webElement, int index){
+    
+    private void selectValue(WebElement webElement, boolean isDefaultValue){
         Select select = new Select(webElement);
-        select.selectByIndex(index);
+        select.selectByIndex(isDefaultValue?1:0);
     }
 
     public void clearForm(){
