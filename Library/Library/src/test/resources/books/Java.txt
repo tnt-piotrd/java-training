@@ -1,0 +1,4 @@
+Joshua
+Bloch
+Effective Java: Programming Language Guide
+2001
