@@ -16,15 +16,15 @@ public class Library {
         throw new RuntimeException("Not implemented!");
     }
 
-    public List<Book> searchByAuthor(String author){
+    public List<Book> searchByAuthor(String author) {
         throw new RuntimeException("Not implemented!");
     }
 
-    public List<Book> searchByAuthorOrTitle(String phrase){
+    public List<Book> searchByAuthorOrTitle(String phrase) {
         throw new RuntimeException("Not implemented!");
     }
 
-    public Author findAuthorWithMostBooks(){
+    public Author findAuthorWithMostBooks() {
         throw new RuntimeException("Not implemented!");
     }
 }
